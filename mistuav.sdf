@@ -1,4 +1,4 @@
-<sdf version='1.7'>
+<sdf version='1.6'>
   <model name='mistuav'>
     <!-- BASE LINK -->
      <!-- <link name='base_link'>
@@ -232,7 +232,7 @@
 
     <joint name='rotor_0_joint' type='revolute'>
       <child>rotor_0</child>
-      <parent>base_link</parent>
+      <parent>side0</parent>
       <axis>
         <xyz>0 0 1</xyz>
         <limit>
@@ -299,7 +299,7 @@
 
     <joint name='rotor_1_joint' type='revolute'>
       <child>rotor_1</child>
-      <parent>base_link</parent>
+      <parent>side1</parent>
       <axis>
         <xyz>0 0 1</xyz>
         <limit>
@@ -366,7 +366,7 @@
 
     <joint name='rotor_2_joint' type='revolute'>
       <child>rotor_2</child>
-      <parent>base_link</parent>
+      <parent>side2</parent>
       <axis>
         <xyz>0 0 1</xyz>
         <limit>
@@ -433,7 +433,7 @@
 
     <joint name='rotor_3_joint' type='revolute'>
       <child>rotor_3</child>
-      <parent>base_link</parent>
+      <parent>side3</parent>
       <axis>
         <xyz>0 0 1</xyz>
         <limit>
