@@ -1,4 +1,4 @@
-<sdf version='1.6'>
+<sdf version='1.7'>
   <model name='mistuav'>
     <!-- BASE LINK -->
      <!-- <link name='base_link'>
