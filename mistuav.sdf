@@ -81,14 +81,14 @@
       </visual>
     </link>
 
-    <!-- <link name="side3">
+    <link name="side3">
       <pose>0 -0.25 0.27 0 0 0</pose>
       <visual name="side3_visual">
         <geometry>
           <box><size>0.05 0.5 0.19</size></box>
         </geometry>
       </visual>
-    </link> -->
+    </link>
 
     <link name="elevon0">
 
