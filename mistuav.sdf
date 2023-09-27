@@ -55,7 +55,7 @@
     <!-- ADD OTHER LINKS HERE -->
 
     <link name="side0">
-      <pose>0 0.25 0.27 0 0 1.57</pose>
+      <pose>0 0.275 0.27 0 0 1.57</pose>
       <visual name="side0_visual">
         <geometry>
           <box><size>0.05 0.5 0.19</size></box>
@@ -64,7 +64,7 @@
     </link>
 
     <link name="side1">
-      <pose>0.25 0 0.27 0 0 0</pose>
+      <pose>0.275 0 0.27 0 0 0</pose>
       <visual name="side1_visual">
         <geometry>
           <box><size>0.05 0.5 0.19</size></box>
@@ -73,7 +73,7 @@
     </link>
 
     <link name="side2">
-      <pose>0 -0.25 0.27 0 0 -1.57</pose>
+      <pose>0 -0.275 0.27 0 0 -1.57</pose>
       <visual name="side2_visual">
         <geometry>
           <box><size>0.05 0.5 0.19</size></box>
@@ -82,7 +82,7 @@
     </link>
 
     <link name="side3">
-      <pose>-0.25 0 0.27 0 0 0</pose>
+      <pose>-0.275 0 0.27 0 0 0</pose>
       <visual name="side3_visual">
         <geometry>
           <box><size>0.05 0.5 0.19</size></box>
