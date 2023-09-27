@@ -63,7 +63,7 @@
       </visual>
     </link>
 
-    <!-- <link name="side1">
+    <link name="side1">
       <pose>0.25 0 0.27 0 0 0</pose>
       <visual name="side1_visual">
         <geometry>
@@ -72,7 +72,7 @@
       </visual>
     </link>
 
-    <link name="side2">
+    <!-- <link name="side2">
       <pose>0 -0.25 0.27 0 0 -1.57</pose>
       <visual name="side2_visual">
         <geometry>
@@ -87,8 +87,8 @@
         <geometry>
           <box><size>0.05 0.5 0.19</size></box>
         </geometry>
-      </visual>
-    </link> -->
+      </visual> -->
+    </link>
 
     <link name="elevon0">
 
