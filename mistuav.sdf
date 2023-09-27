@@ -128,11 +128,11 @@
     <!-- END OF LINKS -->
     <!-- JOINTS CAN GO HERE -->
 
-    <!-- <joint name="side_elevon0" type="revolute">
+    <joint name="side_elevon0" type="revolute">
       <parent>side0</parent>
       <child>elevon0</child>
       <axis>
-        <xyz></xyz>
+        <xyz>0 1 0</xyz>
         <limit>
           <lower></lower>
           <upper></upper>
@@ -185,7 +185,7 @@
           <upper>0.79</upper>
         </limit>
       </axis>
-    </joint> -->
+    </joint>
     <!-- END OF JOINTS -->
 
     <include>
