@@ -72,7 +72,7 @@
       </visual>
     </link>
 
-    <!-- <link name="side2">
+    <link name="side2">
       <pose>0 -0.25 0.27 0 0 -1.57</pose>
       <visual name="side2_visual">
         <geometry>
@@ -81,7 +81,7 @@
       </visual>
     </link>
 
-    <link name="side3">
+    <!-- <link name="side3">
       <pose>0 -0.25 0.27 0 0 0</pose>
       <visual name="side3_visual">
         <geometry>
