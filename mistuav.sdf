@@ -82,7 +82,7 @@
     </link>
 
     <link name="side3">
-      <pose>-0.275 0 0.27 0 0 0</pose>
+      <pose>-0.275 0 0.27 0 0 -3.14</pose>
       <visual name="side3_visual">
         <geometry>
           <box><size>0.05 0.5 0.19</size></box>
@@ -118,7 +118,7 @@
     </link>
 
     <link name="elevon3">
-      <pose>-0.275 0 0.095 0 0 0</pose>
+      <pose>-0.275 0 0.095 0 0 -3.14</pose>
       <visual name="elevon3_visual">
         <geometry>
           <box><size>0.05 0.5 0.19</size></box>
@@ -134,22 +134,46 @@
       <axis>
         <xyz>0 1 0</xyz>
         <limit>
-          <lower></lower>
-          <upper></upper>
+          <lower>-0.7</lower>
+          <upper>0.7</upper>
         </limit>
       </axis>
     </joint>
     
     <joint name="side_elevon1" type="revolute">
-
+      <parent>side1</parent>
+      <child>elevon1</child>
+      <axis>
+        <xyz>1 0 0</xyz>
+        <limit>
+          <lower>-0.7</lower>
+          <upper>0.7</upper>
+        </limit>
+      </axis>
     </joint>
 
     <joint name="side_elevon2" type="revolute">
-
+      <parent>side2</parent>
+      <child>elevon2</child>
+      <axis>
+        <xyz>0 1 0</xyz>
+        <limit>
+          <lower>-0.7</lower>
+          <upper>0.7</upper>
+        </limit>
+      </axis>
     </joint>
 
     <joint name="side_elevon3" type="revolute">
-
+      <parent>side3</parent>
+      <child>elevon3</child>
+      <axis>
+        <xyz>1 0 0</xyz>
+        <limit>
+          <lower>-0.7</lower>
+          <upper>0.7</upper>
+        </limit>
+      </axis>
     </joint>
 
 
