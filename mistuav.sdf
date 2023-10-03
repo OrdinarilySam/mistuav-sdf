@@ -55,19 +55,19 @@
     <!-- ADD OTHER LINKS HERE -->
 
     <link name="side0">
-      <pose>0 0.275 0.27 0 0 1.57</pose>
+      <pose>0.275 0 0.27 0 0 0</pose>
       <visual name="side0_visual">
         <geometry>
-          <box><size>0.05 0.5 0.19</size></box>
+          <box><size>0.5 0.05 0.16</size></box>
         </geometry>
       </visual>
     </link>
 
     <link name="side1">
-      <pose>0.275 0 0.27 0 0 0</pose>
+      <pose>0 0.275 0.27 0 0 0</pose>
       <visual name="side1_visual">
         <geometry>
-          <box><size>0.05 0.5 0.19</size></box>
+          <box><size>0.5 0.05 0.16</size></box>
         </geometry>
       </visual>
     </link>
@@ -81,7 +81,7 @@
       </visual>
     </link>
 
-    <link name="side3">
+    <!-- <link name="side3">
       <pose>-0.275 0 0.27 0 0 -3.14</pose>
       <visual name="side3_visual">
         <geometry>
@@ -124,10 +124,10 @@
           <box><size>0.05 0.5 0.19</size></box>
         </geometry>
       </visual>
-    </link>
+    </link> -->
     <!-- END OF LINKS -->
     <!-- JOINTS CAN GO HERE -->
-
+<!-- 
     <joint name="side_elevon0" type="revolute">
       <parent>side0</parent>
       <child>elevon0</child>
@@ -209,7 +209,7 @@
           <upper>0.79</upper>
         </limit>
       </axis>
-    </joint>
+    </joint> -->
     <!-- END OF JOINTS -->
 
     <include>
