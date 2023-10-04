@@ -271,6 +271,11 @@
       <pose>-0.025 0.25 0</pose>
       <axis>
         <xyz>0 0 1</xyz>
+        <initial_position>1.57</initial_position>
+        <limit>
+          <lower>1.57</lower>
+          <upper>3.14</upper>
+        </limit>
       </axis>
     </joint>
     <joint name="side_1_2_joint" type="revolute">
@@ -279,6 +284,11 @@
       <pose>0.25 0.025 0</pose>
       <axis>
         <xyz>0 0 1</xyz>
+        <initial_position>1.57</initial_position>
+        <limit>
+          <lower>1.57</lower>
+          <upper>3.14</upper>
+        </limit>
       </axis>
     </joint>
     <joint name="side_2_3_joint" type="revolute">
@@ -287,6 +297,11 @@
       <pose>-0.025 -0.25 0</pose>
       <axis>
         <xyz>0 0 1</xyz>
+        <initial_position>1.57</initial_position>
+        <limit>
+          <lower>1.57</lower>
+          <upper>3.14</upper>
+        </limit>
       </axis>
     </joint>
     <!-- END OF JOINTS -->
