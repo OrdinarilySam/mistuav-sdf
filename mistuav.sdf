@@ -410,7 +410,7 @@
 
     <joint name='imu_joint' type='revolute'>
       <child>imu::link</child>
-      <parent>base_link</parent>
+      <parent>side2</parent>
       <axis>
         <xyz>1 0 0</xyz>
         <limit>
@@ -698,7 +698,7 @@
 
     <plugin name='rosbag' filename='libgazebo_multirotor_base_plugin.so'>
       <robotNamespace/>
-      <linkName>base_link</linkName>
+      <linkName>side0</linkName>
       <rotorVelocitySlowdownSim>10</rotorVelocitySlowdownSim>
     </plugin>
 
@@ -781,7 +781,7 @@
     </include>
     <joint name='gps0_joint' type='fixed'>
       <child>gps0::link</child>
-      <parent>base_link</parent>
+      <parent>side2</parent>
     </joint>
 
     <include>
@@ -791,7 +791,7 @@
     </include>
     <joint name='mag_joint' type='fixed'>
       <child>mag::link</child>
-      <parent>base_link</parent>
+      <parent>side2</parent>
     </joint>
 
     <plugin name='groundtruth_plugin' filename='libgazebo_groundtruth_plugin.so'>
