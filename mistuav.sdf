@@ -321,6 +321,7 @@
           <lower>-0.7</lower>
           <upper>0.7</upper>
           <effort>1000</effort>
+          <velocity>1</velocity>
         </limit>
       </axis>
     </joint>
@@ -334,6 +335,7 @@
           <lower>-0.7</lower>
           <upper>0.7</upper>
           <effort>1000</effort>
+          <velocity>1</velocity>
         </limit>
       </axis>
     </joint>
@@ -347,6 +349,7 @@
           <lower>-0.7</lower>
           <upper>0.7</upper>
           <effort>1000</effort>
+          <velocity>1</velocity>
         </limit>
       </axis>
     </joint>
@@ -360,6 +363,7 @@
           <lower>-0.7</lower>
           <upper>0.7</upper>
           <effort>1000</effort>
+          <velocity>1</velocity>
         </limit>
       </axis>
     </joint>
@@ -376,6 +380,7 @@
           <lower>1.57</lower>
           <upper>3.14</upper>
           <effort>1000</effort>
+          <velocity>1</velocity>
         </limit>
       </axis>
     </joint>
@@ -390,13 +395,14 @@
           <lower>1.57</lower>
           <upper>3.14</upper>
           <effort>1000</effort>
+          <velocity>1</velocity>
         </limit>
       </axis>
     </joint>
     <joint name="side_2_3_joint" type="revolute">
       <parent>side2</parent>
       <child>side3</child>
-      <pose>-0.025 -0.25 0</pose>
+      <pose>0.025 -0.25 0</pose>
       <axis>
         <xyz>0 0 1</xyz>
         <initial_position>1.57</initial_position>
@@ -404,6 +410,7 @@
           <lower>1.57</lower>
           <upper>3.14</upper>
           <effort>1000</effort>
+          <velocity>1</velocity>
         </limit>
       </axis>
     </joint>
