@@ -54,6 +54,9 @@
     </link>  -->
     <!-- ADD OTHER LINKS HERE -->
 
+    <link name="base_link">
+    </link>
+
     <link name="side0">
       <pose>0 0.275 0.26 0 0 0</pose>
       <inertial>
