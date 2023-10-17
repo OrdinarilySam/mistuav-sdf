@@ -375,12 +375,12 @@
       <pose>-0.025 0.25 0</pose>
       <axis>
         <xyz>0 0 1</xyz>
-        <!-- <initial_position>1.57</initial_position> -->
+        <initial_position>1.57</initial_position>
         <limit>
-          <!-- <lower>1.57</lower>
-          <upper>3.14</upper> -->
-          <lower>0</lower>
-          <upper>1.57</upper>
+          <lower>1.57</lower>
+          <upper>3.14</upper>
+          <!-- <lower>0</lower>
+          <upper>1.57</upper> -->
           <effort>1000</effort>
           <velocity>1</velocity>
         </limit>
@@ -392,12 +392,12 @@
       <pose>0.25 0.025 0</pose>
       <axis>
         <xyz>0 0 1</xyz>
-        <!-- <initial_position>1.57</initial_position> -->
+        <initial_position>1.57</initial_position>
         <limit>
-          <!-- <lower>1.57</lower>
-          <upper>3.14</upper> -->
-          <lower>0</lower>
-          <upper>1.57</upper>
+          <lower>1.57</lower>
+          <upper>3.14</upper>
+          <!-- <lower>0</lower>
+          <upper>1.57</upper> -->
           <effort>1000</effort>
           <velocity>1</velocity>
         </limit>
@@ -409,10 +409,10 @@
       <pose>0.025 -0.25 0</pose>
       <axis>
         <xyz>0 0 1</xyz>
-        <!-- <initial_position>1.57</initial_position> -->
+        <initial_position>1.57</initial_position>
         <limit>
-          <!-- <lower>1.57</lower>
-          <upper>3.14</upper> -->
+          <lower>1.57</lower>
+          <upper>3.14</upper>
           <lower>0</lower>
           <upper>1.57</upper>
           <effort>1000</effort>
