@@ -379,8 +379,8 @@
         <limit>
           <!-- <lower>1.57</lower>
           <upper>3.14</upper> -->
-          <lower>-1.57</lower>
-          <upper>0</upper>
+          <lower>0</lower>
+          <upper>1.57</upper>
           <effort>1000</effort>
           <velocity>1</velocity>
         </limit>
@@ -396,8 +396,8 @@
         <limit>
           <!-- <lower>1.57</lower>
           <upper>3.14</upper> -->
-          <lower>-1.57</lower>
-          <upper>0</upper>
+          <lower>0</lower>
+          <upper>1.57</upper>
           <effort>1000</effort>
           <velocity>1</velocity>
         </limit>
@@ -413,8 +413,8 @@
         <limit>
           <!-- <lower>1.57</lower>
           <upper>3.14</upper> -->
-          <lower>-1.57</lower>
-          <upper>0</upper>
+          <lower>0</lower>
+          <upper>1.57</upper>
           <effort>1000</effort>
           <velocity>1</velocity>
         </limit>
