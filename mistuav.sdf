@@ -647,7 +647,7 @@
         <initial_position>1.57</initial_position>
         <limit>
           <lower>1.57</lower>
-          <upper>0</upper>
+          <upper>1.57</upper>
           <effort>1000</effort>
           <velocity>1</velocity>
         </limit>
@@ -662,7 +662,7 @@
         <initial_position>1.57</initial_position>
         <limit>
           <lower>1.57</lower>
-          <upper>0</upper>
+          <upper>1.57</upper>
           <effort>1000</effort>
           <velocity>1</velocity>
         </limit>
@@ -677,7 +677,7 @@
         <initial_position>1.57</initial_position>
         <limit>
           <lower>1.57</lower>
-          <upper>0</upper>
+          <upper>1.57</upper>
           <effort>1000</effort>
           <velocity>1</velocity>
         </limit>
