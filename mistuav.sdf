@@ -59,10 +59,10 @@
     </link>
 
     <link name="side0">
-      <pose>0.75 0 0.26 0 0 0</pose>
+      <pose>0.75 0 0.17 0 0 0</pose>
       <inertial>
         <pose>0 0 0 0 0 0</pose>
-        <mass>0.95</mass>
+        <mass>1</mass>
         <inertia>
           <ixx>0.13</ixx>
           <ixy>0</ixy>
@@ -73,6 +73,16 @@
         </inertia>
       </inertial>
       <visual name="side0_visual">
+        <geometry>
+          <box><size>0.5 0.05 0.34</size></box>
+        </geometry>
+      </visual>
+      <collision name="side0_collision">
+        <geometry>
+          <box><size>0.5 0.05 0.34</size></box>
+        </geometry>
+      </collision>
+      <!-- <visual name="side0_visual">
         <geometry>
           <box><size>0.5 0.05 0.16</size></box>
         </geometry>
@@ -93,14 +103,14 @@
         <geometry>
           <box><size>0.01 0.05 0.18</size></box>
         </geometry>
-      </collision>
+      </collision> -->
     </link>
 
     <link name="side1">
-      <pose>0.25 0 0.26 0 0 0</pose>
+      <pose>0.25 0 0.17 0 0 0</pose>
       <inertial>
         <pose>0 0 0 0 0 0</pose>
-        <mass>0.95</mass>
+        <mass>1</mass>
         <inertia>
           <ixx>0.13</ixx>
           <ixy>0</ixy>
@@ -111,6 +121,16 @@
         </inertia>
       </inertial>
       <visual name="side1_visual">
+        <geometry>
+          <box><size>0.5 0.05 0.34</size></box>
+        </geometry>
+      </visual>
+      <collision name="side1_collision">
+        <geometry>
+          <box><size>0.5 0.05 0.34</size></box>
+        </geometry>
+      </collision>
+      <!-- <visual name="side1_visual">
         <geometry>
           <box><size>0.5 0.05 0.16</size></box>
         </geometry>
@@ -131,14 +151,14 @@
         <geometry>
           <box><size>0.01 0.05 0.18</size></box>
         </geometry>
-      </collision>
+      </collision> -->
     </link>
 
     <link name="side2">
-      <pose>-0.25 0 0.26 0 0 0</pose>
+      <pose>-0.25 0 0.17 0 0 0</pose>
       <inertial>
         <pose>0 0 0 0 0 0</pose>
-        <mass>0.95</mass>
+        <mass>1</mass>
         <inertia>
           <ixx>0.13</ixx>
           <ixy>0</ixy>
@@ -149,6 +169,16 @@
         </inertia>
       </inertial>
       <visual name="side2_visual">
+        <geometry>
+          <box><size>0.5 0.05 0.34</size></box>
+        </geometry>
+      </visual>
+      <collision name="side2_collision">
+        <geometry>
+          <box><size>0.5 0.05 0.34</size></box>
+        </geometry>
+      </collision>
+      <!-- <visual name="side2_visual">
         <geometry>
           <box><size>0.5 0.05 0.16</size></box>
         </geometry>
@@ -169,14 +199,14 @@
         <geometry>
           <box><size>0.01 0.05 0.18</size></box>
         </geometry>
-      </collision>
+      </collision> -->
     </link>
 
     <link name="side3">
-      <pose>-0.75 0 0.26 0 0 0</pose>
+      <pose>-0.75 0 0.17 0 0 0</pose>
       <inertial>
         <pose>0 0 0 0 0 0</pose>
-        <mass>0.95</mass>
+        <mass>1</mass>
         <inertia>
           <ixx>0.13</ixx>
           <ixy>0</ixy>
@@ -187,6 +217,17 @@
         </inertia>
       </inertial>
       <visual name="side3_visual">
+        <geometry>
+          <box><size>0.5 0.05 0.34</size></box>
+        </geometry>
+      </visual>
+      <collision name="side3_collision">
+        <geometry>
+          <box><size>0.5 0.05 0.34</size></box>
+        </geometry>
+
+      </collision>
+      <!-- <visual name="side3_visual">
         <geometry>
           <box><size>0.5 0.05 0.16</size></box>
         </geometry>
@@ -207,7 +248,7 @@
         <geometry>
           <box><size>0.01 0.05 0.18</size></box>
         </geometry>
-      </collision>
+      </collision> -->
     </link>
 
     <!-- <link name="side1">
