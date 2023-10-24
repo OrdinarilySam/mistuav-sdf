@@ -224,7 +224,7 @@
       </axis>
     </joint>
     <link name='rotor_0'>
-      <pose>0.18 -0.18 0 0 0 0</pose>
+      <pose>-0.75 0 0.35 0 0 0</pose>
       <inertial>
         <pose>0 0 0 0 0 0</pose>
         <mass>0.005</mass>
@@ -274,7 +274,7 @@
     </link>
     <joint name='rotor_0_joint' type='revolute'>
       <child>rotor_0</child>
-      <parent>base_link</parent>
+      <parent>side3</parent>
       <axis>
         <xyz>0 0 1</xyz>
         <limit>
@@ -289,7 +289,7 @@
       </axis>
     </joint>
     <link name='rotor_1'>
-      <pose>-0.18 0.18 0 0 0 0</pose>
+      <pose>0.25 0 0.35 0 0 0</pose>
       <inertial>
         <pose>0 0 0 0 0 0</pose>
         <mass>0.005</mass>
@@ -339,7 +339,7 @@
     </link>
     <joint name='rotor_1_joint' type='revolute'>
       <child>rotor_1</child>
-      <parent>base_link</parent>
+      <parent>side1</parent>
       <axis>
         <xyz>0 0 1</xyz>
         <limit>
@@ -354,7 +354,7 @@
       </axis>
     </joint>
     <link name='rotor_2'>
-      <pose>0.18 0.18 0 0 0 0</pose>
+      <pose>0.75 0 0.35 0 0 0</pose>
       <inertial>
         <pose>0 0 0 0 0 0</pose>
         <mass>0.005</mass>
@@ -404,7 +404,7 @@
     </link>
     <joint name='rotor_2_joint' type='revolute'>
       <child>rotor_2</child>
-      <parent>base_link</parent>
+      <parent>side0</parent>
       <axis>
         <xyz>0 0 1</xyz>
         <limit>
@@ -419,7 +419,7 @@
       </axis>
     </joint>
     <link name='rotor_3'>
-      <pose>-0.18 -0.18 0 0 0 0</pose>
+      <pose>-0.25 0 0.35 0 0 0</pose>
       <inertial>
         <pose>0 0 0 0 0 0</pose>
         <mass>0.005</mass>
@@ -469,7 +469,7 @@
     </link>
     <joint name='rotor_3_joint' type='revolute'>
       <child>rotor_3</child>
-      <parent>base_link</parent>
+      <parent>side2</parent>
       <axis>
         <xyz>0 0 1</xyz>
         <limit>
