@@ -75,6 +75,17 @@
         <geometry>
           <box><size>0.5 0.05 0.34</size></box>
         </geometry>
+        <surface>
+          <contact>
+            <ode>
+              <min_depth>0.001</min_depth>
+              <max_vel>0</max_vel>
+            </ode>
+          </contact>
+          <friction>
+            <ode/>
+          </friction>
+        </surface>
       </collision>
     </link>
 
@@ -101,6 +112,17 @@
         <geometry>
           <box><size>0.5 0.05 0.34</size></box>
         </geometry>
+        <surface>
+          <contact>
+            <ode>
+              <min_depth>0.001</min_depth>
+              <max_vel>0</max_vel>
+            </ode>
+          </contact>
+          <friction>
+            <ode/>
+          </friction>
+        </surface>
       </collision>
      </link>
 
@@ -127,6 +149,17 @@
         <geometry>
           <box><size>0.5 0.05 0.34</size></box>
         </geometry>
+        <surface>
+          <contact>
+            <ode>
+              <min_depth>0.001</min_depth>
+              <max_vel>0</max_vel>
+            </ode>
+          </contact>
+          <friction>
+            <ode/>
+          </friction>
+        </surface>
       </collision>
     </link>
 
@@ -153,6 +186,17 @@
         <geometry>
           <box><size>0.5 0.05 0.34</size></box>
         </geometry>
+        <surface>
+          <contact>
+            <ode>
+              <min_depth>0.001</min_depth>
+              <max_vel>0</max_vel>
+            </ode>
+          </contact>
+          <friction>
+            <ode/>
+          </friction>
+        </surface>
       </collision>
     </link>
     <joint name="side_0_1_joint" type="revolute">
