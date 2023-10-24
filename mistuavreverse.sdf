@@ -1,7 +1,7 @@
+<!-- DO NOT EDIT: Generated from iris.sdf.jinja -->
 <sdf version='1.6'>
   <model name='mistuav'>
-    <!-- BASE LINK -->
-     <!-- <link name='base_link'>
+    <link name='base_link'>
       <pose>0 0 0 0 0 0</pose>
       <inertial>
         <pose>0 0 0 0 0 0</pose>
@@ -15,7 +15,7 @@
           <izz>0.25</izz>
         </inertia>
       </inertial>
-       <collision name='base_link_inertia_collision'>
+      <!-- <collision name='base_link_inertia_collision'>
         <pose>0 0 0 0 0 0</pose>
         <geometry>
           <box>
@@ -33,8 +33,8 @@
             <ode/>
           </friction>
         </surface>
-      </collision> 
-      <visual name='base_link_inertia_visual'>
+      </collision> -->
+      <!-- <visual name='base_link_inertia_visual'>
         <pose>0 0 0 0 0 0</pose>
         <geometry>
           <mesh>
@@ -48,16 +48,10 @@
             <uri>file://media/materials/scripts/gazebo.material</uri>
           </script>
         </material>
-      </visual> 
+      </visual> -->
       <gravity>1</gravity>
       <velocity_decay/>
-    </link>  -->
-    <!-- ADD OTHER LINKS HERE -->
-
-    <link name="base_link">
-      <pose>0 0 0.26 0 0 0</pose>
     </link>
-
     <link name="side0">
       <pose>0.75 0 0.17 0 0 0</pose>
       <inertial>
@@ -161,10 +155,6 @@
         </geometry>
       </collision>
     </link>
-    
-    <!-- END OF LINKS -->
-    <!-- JOINTS CAN GO HERE -->
-
     <joint name="side_0_1_joint" type="revolute">
       <parent>side0</parent>
       <child>side1</child>
@@ -210,14 +200,11 @@
         </limit>
       </axis>
     </joint>
-    <!-- END OF JOINTS -->
-
     <include>
       <uri>model://imu</uri>
       <pose>0 0 0 0 0 0</pose>
       <name>imu</name>
     </include>
-
     <joint name='imu_joint' type='revolute'>
       <child>imu::link</child>
       <parent>base_link</parent>
@@ -236,10 +223,8 @@
         <use_parent_model_frame>1</use_parent_model_frame>
       </axis>
     </joint>
-
-    <!-- ROTOR LINKS AND JOINTS -->
     <link name='rotor_0'>
-      <pose>-0.75 0 0.345 0 0 0</pose>
+      <pose>0.18 -0.18 0 0 0 0</pose>
       <inertial>
         <pose>0 0 0 0 0 0</pose>
         <mass>0.005</mass>
@@ -287,10 +272,9 @@
       <gravity>1</gravity>
       <velocity_decay/>
     </link>
-
     <joint name='rotor_0_joint' type='revolute'>
       <child>rotor_0</child>
-      <parent>side3</parent>
+      <parent>base_link</parent>
       <axis>
         <xyz>0 0 1</xyz>
         <limit>
@@ -304,9 +288,8 @@
         <use_parent_model_frame>1</use_parent_model_frame>
       </axis>
     </joint>
-
     <link name='rotor_1'>
-      <pose>0.25 0 0.345 0 0 0</pose>
+      <pose>-0.18 0.18 0 0 0 0</pose>
       <inertial>
         <pose>0 0 0 0 0 0</pose>
         <mass>0.005</mass>
@@ -354,10 +337,9 @@
       <gravity>1</gravity>
       <velocity_decay/>
     </link>
-
     <joint name='rotor_1_joint' type='revolute'>
       <child>rotor_1</child>
-      <parent>side1</parent>
+      <parent>base_link</parent>
       <axis>
         <xyz>0 0 1</xyz>
         <limit>
@@ -371,9 +353,8 @@
         <use_parent_model_frame>1</use_parent_model_frame>
       </axis>
     </joint>
-
     <link name='rotor_2'>
-      <pose>0.75 0 0.345 0 0 0</pose>
+      <pose>0.18 0.18 0 0 0 0</pose>
       <inertial>
         <pose>0 0 0 0 0 0</pose>
         <mass>0.005</mass>
@@ -421,10 +402,9 @@
       <gravity>1</gravity>
       <velocity_decay/>
     </link>
-
     <joint name='rotor_2_joint' type='revolute'>
       <child>rotor_2</child>
-      <parent>side0</parent>
+      <parent>base_link</parent>
       <axis>
         <xyz>0 0 1</xyz>
         <limit>
@@ -438,9 +418,8 @@
         <use_parent_model_frame>1</use_parent_model_frame>
       </axis>
     </joint>
-
     <link name='rotor_3'>
-      <pose>-0.25 0 0.345 0 0 0</pose>
+      <pose>-0.18 -0.18 0 0 0 0</pose>
       <inertial>
         <pose>0 0 0 0 0 0</pose>
         <mass>0.005</mass>
@@ -488,10 +467,9 @@
       <gravity>1</gravity>
       <velocity_decay/>
     </link>
-
     <joint name='rotor_3_joint' type='revolute'>
       <child>rotor_3</child>
-      <parent>side2</parent>
+      <parent>base_link</parent>
       <axis>
         <xyz>0 0 1</xyz>
         <limit>
@@ -505,13 +483,11 @@
         <use_parent_model_frame>1</use_parent_model_frame>
       </axis>
     </joint>
-
     <plugin name='rosbag' filename='libgazebo_multirotor_base_plugin.so'>
       <robotNamespace/>
-      <linkName>side0</linkName>
+      <linkName>base_link</linkName>
       <rotorVelocitySlowdownSim>10</rotorVelocitySlowdownSim>
     </plugin>
-
     <plugin name='front_right_motor_model' filename='libgazebo_motor_model.so'>
       <robotNamespace/>
       <jointName>rotor_0_joint</jointName>
@@ -529,7 +505,6 @@
       <motorSpeedPubTopic>/motor_speed/0</motorSpeedPubTopic>
       <rotorVelocitySlowdownSim>10</rotorVelocitySlowdownSim>
     </plugin>
-
     <plugin name='back_left_motor_model' filename='libgazebo_motor_model.so'>
       <robotNamespace/>
       <jointName>rotor_1_joint</jointName>
@@ -547,7 +522,6 @@
       <motorSpeedPubTopic>/motor_speed/1</motorSpeedPubTopic>
       <rotorVelocitySlowdownSim>10</rotorVelocitySlowdownSim>
     </plugin>
-
     <plugin name='front_left_motor_model' filename='libgazebo_motor_model.so'>
       <robotNamespace/>
       <jointName>rotor_2_joint</jointName>
@@ -565,7 +539,6 @@
       <motorSpeedPubTopic>/motor_speed/2</motorSpeedPubTopic>
       <rotorVelocitySlowdownSim>10</rotorVelocitySlowdownSim>
     </plugin>
-
     <plugin name='back_right_motor_model' filename='libgazebo_motor_model.so'>
       <robotNamespace/>
       <jointName>rotor_3_joint</jointName>
@@ -583,7 +556,6 @@
       <motorSpeedPubTopic>/motor_speed/3</motorSpeedPubTopic>
       <rotorVelocitySlowdownSim>10</rotorVelocitySlowdownSim>
     </plugin>
-
     <include>
       <uri>model://gps</uri>
       <pose>0.1 0 0 0 0 0</pose>
@@ -591,9 +563,8 @@
     </include>
     <joint name='gps0_joint' type='fixed'>
       <child>gps0::link</child>
-      <parent>side2</parent>
+      <parent>base_link</parent>
     </joint>
-
     <include>
       <uri>model://magnetometer</uri>
       <pose>0 0 0 0 0 0</pose>
@@ -601,20 +572,17 @@
     </include>
     <joint name='mag_joint' type='fixed'>
       <child>mag::link</child>
-      <parent>side2</parent>
+      <parent>base_link</parent>
     </joint>
-
     <plugin name='groundtruth_plugin' filename='libgazebo_groundtruth_plugin.so'>
       <robotNamespace/>
     </plugin>
-
     <plugin name='barometer_plugin' filename='libgazebo_barometer_plugin.so'>
       <robotNamespace/>
       <pubRate>50</pubRate>
       <baroTopic>/baro</baroTopic>
       <baroDriftPaPerSec>0</baroDriftPaPerSec>
     </plugin>
-
     <plugin name='mavlink_interface' filename='libgazebo_mavlink_interface.so'>
       <robotNamespace/>
       <imuSubTopic>/imu</imuSubTopic>
