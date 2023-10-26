@@ -172,6 +172,11 @@
       <axis>
         <xyz>0 0 -1</xyz>
         <initial_position>1.57</initial_position>
+        <dynamics>
+          <damping>1</damping>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
         <limit>
           <lower>1.57</lower>
           <upper>1.57</upper>
@@ -187,6 +192,11 @@
       <axis>
         <xyz>0 0 -1</xyz>
         <initial_position>1.57</initial_position>
+        <dynamics>
+          <damping>1</damping>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
         <limit>
           <lower>1.57</lower>
           <upper>1.57</upper>
@@ -202,6 +212,11 @@
       <axis>
         <xyz>0 0 -1</xyz>
         <initial_position>1.57</initial_position>
+        <dynamics>
+          <damping>1</damping>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
         <limit>
           <lower>1.57</lower>
           <upper>1.57</upper>
