@@ -87,6 +87,8 @@
           </friction>
         </surface>
       </collision>
+      <gravity>1</gravity>
+      <velocity_decay/>
     </link>
 
     <link name="side1">
@@ -124,6 +126,8 @@
           </friction>
         </surface>
       </collision>
+      <gravity>1</gravity>
+      <velocity_decay/>
      </link>
 
     <link name="side2">
@@ -161,6 +165,8 @@
           </friction>
         </surface>
       </collision>
+      <gravity>1</gravity>
+      <velocity_decay/>
     </link>
 
     <link name="side3">
@@ -198,6 +204,8 @@
           </friction>
         </surface>
       </collision>
+      <gravity>1</gravity>
+      <velocity_decay/>
     </link>
     <joint name="side_0_1_joint" type="revolute">
       <parent>side0</parent>
