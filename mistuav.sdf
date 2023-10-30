@@ -54,9 +54,9 @@
     </link>  -->
     <!-- ADD OTHER LINKS HERE -->
 
-    <link name="base_link">
+    <!-- <link name="base_link">
       <pose>0 0 0.26 0 0 0</pose>
-    </link>
+    </link> -->
 
     <link name="side0">
       <pose>0.75 0 0.17 0 0 0</pose>
@@ -110,7 +110,7 @@
       </collision>
      </link>
 
-    <link name="side2">
+    <!-- <link name="side2">
       <pose>-0.25 0 0.17 0 0 0</pose>
       <inertial>
         <pose>0 0 0 0 0 0</pose>
@@ -160,7 +160,7 @@
           <box><size>0.5 0.05 0.34</size></box>
         </geometry>
       </collision>
-    </link>
+    </link> -->
     
     <!-- END OF LINKS -->
     <!-- JOINTS CAN GO HERE -->
@@ -185,7 +185,7 @@
         </limit>
       </axis>
     </joint>
-    <joint name="side_1_2_joint" type="revolute">
+    <!-- <joint name="side_1_2_joint" type="revolute">
       <parent>side1</parent>
       <child>side2</child>
       <pose>0.25 0.05 0</pose>
@@ -224,7 +224,7 @@
           <velocity>1</velocity>
         </limit>
       </axis>
-    </joint>
+    </joint> -->
     <!-- END OF JOINTS -->
 
     <include>
@@ -235,7 +235,7 @@
 
     <joint name='imu_joint' type='revolute'>
       <child>imu::link</child>
-      <parent>base_link</parent>
+      <parent>side1</parent>
       <axis>
         <xyz>1 0 0</xyz>
         <limit>
@@ -253,7 +253,7 @@
     </joint>
 
     <!-- ROTOR LINKS AND JOINTS -->
-    <link name='rotor_0'>
+    <!-- <link name='rotor_0'>
       <pose>-0.75 0 0.36 0 0 0</pose>
       <inertial>
         <pose>0 0 0 0 0 0</pose>
@@ -318,7 +318,7 @@
         </dynamics>
         <use_parent_model_frame>1</use_parent_model_frame>
       </axis>
-    </joint>
+    </joint> -->
 
     <link name='rotor_1'>
       <pose>0.25 0 0.36 0 0 0</pose>
@@ -454,7 +454,7 @@
       </axis>
     </joint>
 
-    <link name='rotor_3'>
+    <!-- <link name='rotor_3'>
       <pose>-0.25 0 0.36 0 0 0</pose>
       <inertial>
         <pose>0 0 0 0 0 0</pose>
@@ -519,14 +519,14 @@
         </dynamics>
         <use_parent_model_frame>1</use_parent_model_frame>
       </axis>
-    </joint>
+    </joint> -->
 
     <plugin name='rosbag' filename='libgazebo_multirotor_base_plugin.so'>
       <robotNamespace/>
       <linkName>side0</linkName>
       <rotorVelocitySlowdownSim>10</rotorVelocitySlowdownSim>
     </plugin>
-
+<!-- 
     <plugin name='front_right_motor_model' filename='libgazebo_motor_model.so'>
       <robotNamespace/>
       <jointName>rotor_0_joint</jointName>
@@ -543,7 +543,7 @@
       <rollingMomentCoefficient>1e-06</rollingMomentCoefficient>
       <motorSpeedPubTopic>/motor_speed/0</motorSpeedPubTopic>
       <rotorVelocitySlowdownSim>10</rotorVelocitySlowdownSim>
-    </plugin>
+    </plugin> -->
 
     <plugin name='back_left_motor_model' filename='libgazebo_motor_model.so'>
       <robotNamespace/>
@@ -581,7 +581,7 @@
       <rotorVelocitySlowdownSim>10</rotorVelocitySlowdownSim>
     </plugin>
 
-    <plugin name='back_right_motor_model' filename='libgazebo_motor_model.so'>
+    <!-- <plugin name='back_right_motor_model' filename='libgazebo_motor_model.so'>
       <robotNamespace/>
       <jointName>rotor_3_joint</jointName>
       <linkName>rotor_3</linkName>
@@ -597,7 +597,7 @@
       <rollingMomentCoefficient>1e-06</rollingMomentCoefficient>
       <motorSpeedPubTopic>/motor_speed/3</motorSpeedPubTopic>
       <rotorVelocitySlowdownSim>10</rotorVelocitySlowdownSim>
-    </plugin>
+    </plugin> -->
 
     <include>
       <uri>model://gps</uri>
@@ -606,7 +606,7 @@
     </include>
     <joint name='gps0_joint' type='fixed'>
       <child>gps0::link</child>
-      <parent>side2</parent>
+      <parent>side1</parent>
     </joint>
 
     <include>
@@ -616,7 +616,7 @@
     </include>
     <joint name='mag_joint' type='fixed'>
       <child>mag::link</child>
-      <parent>side2</parent>
+      <parent>side1</parent>
     </joint>
 
     <plugin name='groundtruth_plugin' filename='libgazebo_groundtruth_plugin.so'>

@@ -14,7 +14,31 @@
           <izz>0.25</izz>
         </inertia>
       </inertial>
-      <collision name='base_link_inertia_collision'>
+      <collision name="col1">
+
+      </collision>
+      <collision name="col2">
+      
+      </collision>
+      <collision name="col3">
+
+      </collision>
+      <collision name="col4">
+      
+      </collision>
+      <visual name="vis1">
+
+      </visual>
+      <visual name="vis2">
+
+      </visual>
+      <visual name="vis3">
+
+      </visual>
+      <visual name="vis4">
+        
+      </visual>
+      <!-- <collision name='base_link_inertia_collision'>
         <pose>0 0 0 0 0 0</pose>
         <geometry>
           <box>
@@ -47,7 +71,7 @@
             <uri>file://media/materials/scripts/gazebo.material</uri>
           </script>
         </material>
-      </visual>
+      </visual> -->
       <gravity>1</gravity>
       <velocity_decay/>
     </link>
